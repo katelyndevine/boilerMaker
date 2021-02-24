@@ -2,9 +2,9 @@ const { db } = require("./db");
 
 const app = require("./index");
 
-// const port = process.env.PORT || 3000; // this can be very useful if you deploy to Heroku!
+const port = process.env.PORT || 3000; // this can be very useful if you deploy to Heroku!
 
-const port = 3000;
+// const port = 3000;
 
 (async function startServer() {
   try {
