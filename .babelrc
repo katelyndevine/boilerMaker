@@ -1,0 +1,8 @@
+// By setting babel-loader in your webpack config, you're teaching webpack to use babel. However, we also need to tell babel how to parse our code. We do this with another dot-file called .babelrc! In your root project directory, make a file called .babelrc and configure it with the babel-presets you installed.
+// For example, if you were using @babel/preset-react and @babel/preset-env your .babelrc might look like this:
+
+{
+  "presets": ["@babel/preset-react"]
+}
+
+//  "@babel/preset-env"
