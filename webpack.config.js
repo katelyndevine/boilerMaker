@@ -23,6 +23,7 @@
 
 module.exports = {
   entry: "./client/main.js",
+  mode: "development",
   output: {
     path: __dirname,
     filename: "./public/bundle.js",
@@ -35,7 +36,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: "babel-loader",
         options: {
-          presets: ["react", "es2015"],
+          // presets: ["@babel/preset-react"],
         },
       },
       // use the style-loader/css-loader combos for anything matching the .css extension
@@ -46,3 +47,5 @@ module.exports = {
     ],
   },
 };
+
+//          presets: ["react", "es2015"],

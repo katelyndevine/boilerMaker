@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build-watch & npm run start-server",
-    "start-server": "nodemon server -w server",
+    "start-server": "nodemon server/start.js -w server",
     "build-watch": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +14,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "morgan": "^1.10.0",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
@@ -21,6 +23,7 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
+    "sequelize": "^6.5.0",
     "webpack-dev-server": "^3.11.2"
   },
   "devDependencies": {

@@ -6,10 +6,12 @@ const router = require("express").Router();
 // For example:
 //
 // For your `/api/puppies` routes:
-// router.use("/puppies", require("./puppies"));
+router.use("/puppies", require("./puppies"));
 // //
 // // And for your `/api/kittens` routes:
 // router.use("/kittens", require("./kittens"));
+
+router.use("/owners", require("./owners"));
 
 // If someone makes a request that starts with `/api`,
 // but you DON'T have a corresponding router, this piece of
