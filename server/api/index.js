@@ -7,9 +7,9 @@ const router = require("express").Router();
 //
 // For your `/api/puppies` routes:
 router.use("/puppies", require("./puppies"));
-// //
-// // And for your `/api/kittens` routes:
-// router.use("/kittens", require("./kittens"));
+// // //
+// // // And for your `/api/kittens` routes:
+// // router.use("/kittens", require("./kittens"));
 
 router.use("/owners", require("./owners"));
 

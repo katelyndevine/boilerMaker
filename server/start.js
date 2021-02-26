@@ -1,6 +1,12 @@
 const { db } = require("./db");
 
-const app = require("./index");
+if (process.env.NODE_ENV === "development") {
+  require("./localSecret"); // this will mutate the process.env object with your secrets.
+}
+
+// in your app's entry point
+// const secret = require("./localSecret"); // mutate the process.env object with your variables
+const app = require("./index"); // run your app after you're sure the env variables are set.
 
 const port = process.env.PORT || 3000; // this can be very useful if you deploy to Heroku!
 

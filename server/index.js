@@ -50,7 +50,7 @@ passport.deserializeUser((id, done) => {
 app.use(express.static(path.join(__dirname, "../public")));
 
 //routes mounted on /api
-app.use("/api", require("./db"));
+app.use("/api", require("./api"));
 
 // Because we generally want to build single-page applications (or SPAs), our server should send its index.html for any requests that don't match one of our API routes.
 app.get("*", (req, res) => {
